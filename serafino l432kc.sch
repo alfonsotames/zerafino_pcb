@@ -455,4 +455,107 @@ F 3 "~" H 7300 1400 50  0001 C CNN
 	1    7300 1400
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5FC74273
+P 3000 4100
+F 0 "Y?" H 2950 4550 50  0000 L CNN
+F 1 "16MHz" H 2850 4450 50  0000 L CNN
+F 2 "" H 3000 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FC752BD
+P 3300 4250
+F 0 "C?" H 3392 4296 50  0000 L CNN
+F 1 "12p" H 3392 4205 50  0000 L CNN
+F 2 "" H 3300 4250 50  0001 C CNN
+F 3 "~" H 3300 4250 50  0001 C CNN
+	1    3300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FC75AB7
+P 2700 4250
+F 0 "C?" H 2500 4300 50  0000 L CNN
+F 1 "12p" H 2500 4200 50  0000 L CNN
+F 2 "" H 2700 4250 50  0001 C CNN
+F 3 "~" H 2700 4250 50  0001 C CNN
+	1    2700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4350 2700 4500
+Wire Wire Line
+	2700 4500 3000 4500
+Wire Wire Line
+	3300 4500 3300 4350
+$Comp
+L Device:R_Small R?
+U 1 1 5FC77AD8
+P 3300 3900
+F 0 "R?" H 3241 3854 50  0000 R CNN
+F 1 "R_Small" H 3241 3945 50  0000 R CNN
+F 2 "" H 3300 3900 50  0001 C CNN
+F 3 "~" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 4000 3300 4100
+Wire Wire Line
+	2700 4150 2700 4100
+Wire Wire Line
+	2700 4100 2900 4100
+Wire Wire Line
+	3100 4100 3300 4100
+Connection ~ 3300 4100
+Wire Wire Line
+	3300 4100 3300 4150
+Wire Wire Line
+	3000 4200 3000 4300
+Connection ~ 3000 4500
+Wire Wire Line
+	3000 4500 3300 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5FC7CF86
+P 3000 4650
+F 0 "#PWR?" H 3000 4400 50  0001 C CNN
+F 1 "GND" H 3005 4477 50  0000 C CNN
+F 2 "" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4650 3000 4500
+Wire Wire Line
+	3000 4000 3000 3900
+Wire Wire Line
+	3000 3900 3150 3900
+Wire Wire Line
+	3150 3900 3150 4300
+Wire Wire Line
+	3150 4300 3000 4300
+Connection ~ 3000 4300
+Wire Wire Line
+	3000 4300 3000 4500
+Text GLabel 3400 3550 2    50   Input ~ 0
+HSE_IN
+Wire Wire Line
+	2700 4100 2700 3550
+Connection ~ 2700 4100
+Text GLabel 3400 3650 2    50   Input ~ 0
+HSE_OUT
+Wire Wire Line
+	3400 3650 3300 3650
+Wire Wire Line
+	3300 3650 3300 3800
+Wire Wire Line
+	2700 3550 3400 3550
 $EndSCHEMATC

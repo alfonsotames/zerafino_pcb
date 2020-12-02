@@ -409,17 +409,6 @@ $EndComp
 Wire Wire Line
 	8000 1200 8000 1400
 $Comp
-L Device:L_Small L?
-U 1 1 5FC9BF68
-P 7300 1400
-F 0 "L?" V 7485 1400 50  0000 C CNN
-F 1 "39n" V 7394 1400 50  0000 C CNN
-F 2 "" H 7300 1400 50  0001 C CNN
-F 3 "~" H 7300 1400 50  0001 C CNN
-	1    7300 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5FC9E120
 P 7050 1200
@@ -455,4 +444,15 @@ Wire Wire Line
 Connection ~ 7550 1400
 Wire Wire Line
 	7550 1400 8000 1400
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5FC6AFE8
+P 7300 1400
+F 0 "FB?" V 7537 1400 50  0000 C CNN
+F 1 "100@100MHz" V 7446 1400 50  0000 C CNN
+F 2 "" V 7230 1400 50  0001 C CNN
+F 3 "~" H 7300 1400 50  0001 C CNN
+	1    7300 1400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

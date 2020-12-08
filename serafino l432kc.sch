@@ -1064,4 +1064,15 @@ F 3 "" H 3700 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 3600 3700 3700
+$Comp
+L Battery_Management:BQ24072RGT U?
+U 1 1 5FD0D37B
+P 2950 4950
+F 0 "U?" H 2950 5731 50  0000 C CNN
+F 1 "BQ24072RGT" H 2950 5640 50  0000 C CNN
+F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 3250 4400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq24072.pdf" H 3250 5150 50  0001 C CNN
+	1    2950 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

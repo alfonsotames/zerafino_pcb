@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name serafino)(type Legacy)(uri ${KIPRJMOD}/serafino.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/power.lib)(options "")(descr ""))
+  (lib (name TPS563207DRLR)(type Legacy)(uri ${KIPRJMOD}/TPS563207DRLR.lib)(options "")(descr ""))
 )

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/mufufu/KiCad Projects/serafino l432kc/serafino l432kc.sch")
-    (date "mar 08 dic 2020 21:57:16")
+    (date "mié 09 dic 2020 00:37:15")
     (tool "Eeschema 5.1.8-db9833491~88~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -45,7 +45,7 @@
       (tstamp 5FC5C03A))
     (comp (ref SW2)
       (value SW_SPDT)
-      (footprint Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN)
+      (footprint Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin)
       (datasheet ~)
       (libsource (lib Switch) (part SW_SPDT) (description "Switch, single pole double throw"))
       (sheetpath (names /) (tstamps /))

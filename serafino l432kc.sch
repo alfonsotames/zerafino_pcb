@@ -251,7 +251,7 @@ U 1 1 5FC8637F
 P 4700 4550
 F 0 "C4" V 4471 4550 50  0000 C CNN
 F 1 "4.3pF" V 4562 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4700 4550 50  0001 C CNN
 F 3 "~" H 4700 4550 50  0001 C CNN
 	1    4700 4550
 	0    1    1    0   
@@ -262,7 +262,7 @@ U 1 1 5FC86C90
 P 4700 4850
 F 0 "C5" V 4850 4850 50  0000 C CNN
 F 1 "4.3pF" V 4950 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 4850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4700 4850 50  0001 C CNN
 F 3 "~" H 4700 4850 50  0001 C CNN
 	1    4700 4850
 	0    1    1    0   
@@ -325,7 +325,7 @@ U 1 1 5FCB5187
 P 2350 5100
 F 0 "SW1" V 2396 5052 50  0000 R CNN
 F 1 "SW_Push" V 2305 5052 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 2350 5300 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816" H 2350 5300 50  0001 C CNN
 F 3 "~" H 2350 5300 50  0001 C CNN
 	1    2350 5100
 	0    -1   -1   0   
@@ -714,7 +714,7 @@ U 1 1 5FD11F63
 P 3550 1550
 F 0 "C3" H 3642 1596 50  0000 L CNN
 F 1 "2.2uF" H 3642 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3550 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 1550 50  0001 C CNN
 F 3 "~" H 3550 1550 50  0001 C CNN
 	1    3550 1550
 	1    0    0    -1  
@@ -754,7 +754,7 @@ U 1 1 5FD1E381
 P 2350 1550
 F 0 "C1" H 2442 1596 50  0000 L CNN
 F 1 "1uF" H 2442 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 2350 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 1550 50  0001 C CNN
 F 3 "~" H 2350 1550 50  0001 C CNN
 	1    2350 1550
 	1    0    0    -1  
@@ -829,8 +829,6 @@ Text GLabel 7500 4800 2    50   Input ~ 0
 PA15
 Text GLabel 2150 950  1    50   Input ~ 0
 VHIGH
-Wire Wire Line
-	2150 950  2150 1100
 Connection ~ 2150 1400
 Wire Wire Line
 	2150 1400 2350 1400
@@ -846,24 +844,6 @@ Wire Wire Line
 	750  1400 900  1400
 Text GLabel 7500 3300 2    50   Input ~ 0
 PA0
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5FD76707
-P 2450 850
-F 0 "TP1" V 2404 1038 50  0000 L CNN
-F 1 "TestPoint" V 2495 1038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 2650 850 50  0001 C CNN
-F 3 "~" H 2650 850 50  0001 C CNN
-	1    2450 850 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2450 850  2450 1100
-Wire Wire Line
-	2450 1100 2150 1100
-Connection ~ 2150 1100
-Wire Wire Line
-	2150 1100 2150 1400
 Wire Wire Line
 	6900 3100 6800 3100
 Wire Wire Line
@@ -1050,78 +1030,6 @@ Wire Wire Line
 	3550 1650 3550 1700
 Wire Wire Line
 	2700 1400 2550 1400
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5FF05A28
-P 9750 5300
-F 0 "H1" V 9704 5450 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9795 5450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 9750 5300 50  0001 C CNN
-F 3 "~" H 9750 5300 50  0001 C CNN
-	1    9750 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5FF0858C
-P 9750 5500
-F 0 "H2" V 9704 5650 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9795 5650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 9750 5500 50  0001 C CNN
-F 3 "~" H 9750 5500 50  0001 C CNN
-	1    9750 5500
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5FF08965
-P 9750 5700
-F 0 "H3" V 9704 5850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9795 5850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 9750 5700 50  0001 C CNN
-F 3 "~" H 9750 5700 50  0001 C CNN
-	1    9750 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5FF08D38
-P 9750 5900
-F 0 "H4" V 9704 6050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9795 6050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 9750 5900 50  0001 C CNN
-F 3 "~" H 9750 5900 50  0001 C CNN
-	1    9750 5900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	9650 5300 9550 5300
-Wire Wire Line
-	9550 5300 9550 5500
-Wire Wire Line
-	9550 5900 9650 5900
-Wire Wire Line
-	9650 5500 9550 5500
-Connection ~ 9550 5500
-Wire Wire Line
-	9550 5500 9550 5700
-Wire Wire Line
-	9650 5700 9550 5700
-Connection ~ 9550 5700
-Wire Wire Line
-	9550 5700 9550 5900
-$Comp
-L power:GND #PWR01
-U 1 1 5FF1CA95
-P 9550 6100
-F 0 "#PWR01" H 9550 5850 50  0001 C CNN
-F 1 "GND" H 9555 5927 50  0000 C CNN
-F 2 "" H 9550 6100 50  0001 C CNN
-F 3 "" H 9550 6100 50  0001 C CNN
-	1    9550 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 6100 9550 5900
-Connection ~ 9550 5900
+	2150 950  2150 1400
 $EndSCHEMATC

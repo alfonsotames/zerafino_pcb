@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/mufufu/KiCad Projects/serafino l432kc/serafino l432kc.sch")
-    (date "mié 09 dic 2020 22:17:56")
+    (date "mié 09 dic 2020 23:39:28")
     (tool "Eeschema 5.1.8-db9833491~88~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -136,7 +136,7 @@
       (tstamp 5FD34764))
     (comp (ref J1)
       (value USB_B_Micro)
-      (footprint Connector_USB:USB_Micro-B_Molex-105133-0001)
+      (footprint Connector_USB:USB_Micro-B_Molex-105017-0001)
       (datasheet ~)
       (libsource (lib Connector) (part USB_B_Micro) (description "USB Micro Type B connector"))
       (sheetpath (names /) (tstamps /))

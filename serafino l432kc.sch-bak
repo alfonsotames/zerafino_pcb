@@ -141,7 +141,7 @@ Text GLabel 6700 4500 2    50   Input ~ 0
 USB_D-
 Text GLabel 6700 3600 2    50   Input ~ 0
 USART2_TX
-Text GLabel 6800 3700 2    50   Input ~ 0
+Text GLabel 6700 3700 2    50   Input ~ 0
 USART2_RX
 Text Notes 5200 1400 0    50   ~ 0
 VDD Decouples
@@ -734,56 +734,56 @@ $EndComp
 Wire Wire Line
 	7950 1500 7950 1700
 Connection ~ 7950 1700
-Text GLabel 8750 4650 0    50   Input ~ 0
+Text GLabel 10250 3650 0    50   Input ~ 0
 I2C1_SCL
-Text GLabel 8750 4550 0    50   Input ~ 0
+Text GLabel 10250 3550 0    50   Input ~ 0
 I2C1_SDA
-Text GLabel 10250 3750 0    50   Input ~ 0
+Text GLabel 10250 4750 0    50   Input ~ 0
 PA0
 $Comp
 L power:+VIN #PWR0104
 U 1 1 5FD50E68
-P 9800 3450
-F 0 "#PWR0104" H 9800 3300 50  0001 C CNN
-F 1 "+VIN" H 9815 3623 50  0000 C CNN
-F 2 "" H 9800 3450 50  0001 C CNN
-F 3 "" H 9800 3450 50  0001 C CNN
-	1    9800 3450
+P 8000 3650
+F 0 "#PWR0104" H 8000 3500 50  0001 C CNN
+F 1 "+VIN" H 8015 3823 50  0000 C CNN
+F 2 "" H 8000 3650 50  0001 C CNN
+F 3 "" H 8000 3650 50  0001 C CNN
+	1    8000 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 10250 3650 0    50   Input ~ 0
+Text GLabel 8750 3650 0    50   Input ~ 0
 VHIGH
 Text GLabel 8750 4750 0    50   Input ~ 0
 NRST
-Text GLabel 10250 4750 0    50   Input ~ 0
+Text GLabel 10250 3750 0    50   Input ~ 0
 LED1
-Text GLabel 8750 4250 0    50   Input ~ 0
-BTN0
-Text GLabel 10250 4650 0    50   Input ~ 0
-LED0
-Text GLabel 10250 4550 0    50   Input ~ 0
-SPI1_SS
 Text GLabel 8750 4050 0    50   Input ~ 0
-PB4
-Text GLabel 8750 3950 0    50   Input ~ 0
-PB5
-Text GLabel 8750 3850 0    50   Input ~ 0
-PB6
-Text GLabel 8750 3750 0    50   Input ~ 0
-PB7
-Text GLabel 10250 4450 0    50   Input ~ 0
-SPI1_MOSI
-Text GLabel 10250 4350 0    50   Input ~ 0
-SPI1_MISO
-Text GLabel 8750 4150 0    50   Input ~ 0
-LED2
-Text GLabel 10250 4150 0    50   Input ~ 0
-SAI1_FS_B
-Text GLabel 10250 4050 0    50   Input ~ 0
-USART2_RX
-Text GLabel 10250 3950 0    50   Input ~ 0
-USART2_TX
+BTN0
 Text GLabel 10250 3850 0    50   Input ~ 0
+LED0
+Text GLabel 10250 3950 0    50   Input ~ 0
+SPI1_SS
+Text GLabel 8750 4250 0    50   Input ~ 0
+PB4
+Text GLabel 8750 4350 0    50   Input ~ 0
+PB5
+Text GLabel 8750 4450 0    50   Input ~ 0
+PB6
+Text GLabel 8750 4550 0    50   Input ~ 0
+PB7
+Text GLabel 10250 4050 0    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 10250 4150 0    50   Input ~ 0
+SPI1_MISO
+Text GLabel 10250 4250 0    50   Input ~ 0
+LED2
+Text GLabel 10250 4350 0    50   Input ~ 0
+SAI1_FS_B
+Text GLabel 10250 4450 0    50   Input ~ 0
+USART2_RX
+Text GLabel 10250 4550 0    50   Input ~ 0
+USART2_TX
+Text GLabel 10250 4650 0    50   Input ~ 0
 SPI1_SCK
 Wire Wire Line
 	1450 800  1450 900 
@@ -808,9 +808,9 @@ Wire Wire Line
 	3550 1650 3550 1700
 Wire Wire Line
 	2150 950  2150 1400
-Text GLabel 8750 4450 0    50   Input ~ 0
+Text GLabel 8750 3950 0    50   Input ~ 0
 SWDIO
-Text GLabel 8750 4350 0    50   Input ~ 0
+Text GLabel 8750 3850 0    50   Input ~ 0
 SWCLK
 $Comp
 L Connector_Generic:Conn_01x14 J3
@@ -863,10 +863,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 5550 4500 5550
 Wire Wire Line
-	9800 3450 9800 3550
-Wire Wire Line
-	9800 3550 10250 3550
-Wire Wire Line
 	8300 3200 8300 3100
 Wire Wire Line
 	8300 3100 8500 3100
@@ -874,7 +870,7 @@ Wire Wire Line
 	8500 3100 8500 3450
 Wire Wire Line
 	8500 3450 8750 3450
-Text GLabel 8750 3650 0    50   Input ~ 0
+Text GLabel 8750 4650 0    50   Input ~ 0
 BOOT0
 $Comp
 L Device:R_Small R3
@@ -995,7 +991,7 @@ Wire Wire Line
 	10100 3350 10100 3450
 Wire Wire Line
 	10100 3450 10250 3450
-Text GLabel 10250 4250 0    50   Input ~ 0
+Text GLabel 8750 4150 0    50   Input ~ 0
 SAI1_SCK_B
 Text GLabel 8750 3550 0    50   Input ~ 0
 EN
@@ -1012,12 +1008,12 @@ Wire Wire Line
 Wire Wire Line
 	2150 1500 2150 1400
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5FE102C0
 P 2500 1600
-F 0 "R?" H 2350 1650 50  0000 L CNN
+F 0 "R5" H 2350 1650 50  0000 L CNN
 F 1 "100k" H 2250 1550 50  0000 L CNN
-F 2 "" H 2500 1600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2500 1600 50  0001 C CNN
 F 3 "~" H 2500 1600 50  0001 C CNN
 	1    2500 1600
 	1    0    0    -1  
@@ -1040,4 +1036,8 @@ EN
 Wire Wire Line
 	2500 1950 2500 1850
 Connection ~ 2500 1850
+Wire Wire Line
+	8000 3650 8000 3750
+Wire Wire Line
+	8000 3750 8750 3750
 $EndSCHEMATC

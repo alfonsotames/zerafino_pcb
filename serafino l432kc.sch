@@ -699,7 +699,7 @@ PB4
 Text GLabel 6700 4200 2    50   Input ~ 0
 LED1
 Text GLabel 6700 4900 2    50   Input ~ 0
-BTN0
+PA15
 Text GLabel 2150 950  1    50   Input ~ 0
 VHIGH
 Connection ~ 2150 1400
@@ -758,7 +758,7 @@ NRST
 Text GLabel 10250 3750 0    50   Input ~ 0
 LED1
 Text GLabel 8750 4050 0    50   Input ~ 0
-BTN0
+PA15
 Text GLabel 10250 3850 0    50   Input ~ 0
 LED0
 Text GLabel 10250 3950 0    50   Input ~ 0
@@ -958,30 +958,6 @@ Wire Wire Line
 	1600 4700 1550 4700
 Wire Wire Line
 	1550 4700 1550 4800
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5FD9DF8A
-P 2350 6400
-F 0 "SW2" V 2396 6352 50  0000 R CNN
-F 1 "SW_Push" V 2305 6352 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816" H 2350 6600 50  0001 C CNN
-F 3 "~" H 2350 6600 50  0001 C CNN
-	1    2350 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5FD9EADD
-P 2350 6700
-F 0 "#PWR0110" H 2350 6450 50  0001 C CNN
-F 1 "GND" H 2355 6527 50  0000 C CNN
-F 2 "" H 2350 6700 50  0001 C CNN
-F 3 "" H 2350 6700 50  0001 C CNN
-	1    2350 6700
-	1    0    0    -1  
-$EndComp
-Text GLabel 3000 6000 2    50   Input ~ 0
-BTN0
 Connection ~ 1450 1400
 Wire Wire Line
 	1500 1400 1450 1400
@@ -999,12 +975,6 @@ Wire Wire Line
 	2350 4850 3000 4850
 Wire Wire Line
 	2350 5300 2350 5400
-Wire Wire Line
-	2350 6600 2350 6700
-Wire Wire Line
-	3000 6000 2350 6000
-Wire Wire Line
-	2350 6000 2350 6200
 Wire Wire Line
 	2150 1500 2150 1400
 $Comp

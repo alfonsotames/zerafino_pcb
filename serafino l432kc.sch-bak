@@ -808,9 +808,9 @@ Wire Wire Line
 	3550 1650 3550 1700
 Wire Wire Line
 	2150 950  2150 1400
-Text GLabel 8750 3950 0    50   Input ~ 0
-SWDIO
 Text GLabel 8750 3850 0    50   Input ~ 0
+SWDIO
+Text GLabel 8750 3950 0    50   Input ~ 0
 SWCLK
 $Comp
 L Connector_Generic:Conn_01x14 J3

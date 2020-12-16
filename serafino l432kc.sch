@@ -650,7 +650,7 @@ Wire Wire Line
 Wire Wire Line
 	700  4700 750  4700
 Text GLabel 5700 4400 0    50   Input ~ 0
-LED0
+PB1
 Wire Wire Line
 	2050 1400 2150 1400
 $Comp
@@ -664,8 +664,6 @@ F 3 "" H 750 1050 50  0001 C CNN
 	1    750  1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 3900 2    50   Input ~ 0
-LED2
 $Comp
 L power:GND #PWR0102
 U 1 1 5FE261BD
@@ -689,15 +687,15 @@ F 3 "" H 10100 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5700 4900 0    50   Input ~ 0
-PB7
+LED2
 Text GLabel 5700 4800 0    50   Input ~ 0
-PB6
+LED1
 Text GLabel 5700 4700 0    50   Input ~ 0
-PB5
+LED0
 Text GLabel 5700 4600 0    50   Input ~ 0
 PB4
 Text GLabel 6700 4200 2    50   Input ~ 0
-LED1
+PA8
 Text GLabel 6700 4900 2    50   Input ~ 0
 PA15
 Text GLabel 2150 950  1    50   Input ~ 0
@@ -753,30 +751,30 @@ F 3 "" H 8000 3650 50  0001 C CNN
 $EndComp
 Text GLabel 8750 3650 0    50   Input ~ 0
 VHIGH
-Text GLabel 8750 4750 0    50   Input ~ 0
+Text GLabel 8750 4450 0    50   Input ~ 0
 NRST
 Text GLabel 10250 3750 0    50   Input ~ 0
-LED1
+PA8
 Text GLabel 8750 4050 0    50   Input ~ 0
 PA15
 Text GLabel 10250 3850 0    50   Input ~ 0
-LED0
+PB1
 Text GLabel 10250 3950 0    50   Input ~ 0
 SPI1_SS
 Text GLabel 8750 4250 0    50   Input ~ 0
 PB4
-Text GLabel 8750 4350 0    50   Input ~ 0
-PB5
-Text GLabel 8750 4450 0    50   Input ~ 0
-PB6
 Text GLabel 8750 4550 0    50   Input ~ 0
-PB7
+LED0
+Text GLabel 8750 4650 0    50   Input ~ 0
+LED1
+Text GLabel 8750 4750 0    50   Input ~ 0
+LED2
 Text GLabel 10250 4050 0    50   Input ~ 0
 SPI1_MOSI
 Text GLabel 10250 4150 0    50   Input ~ 0
 SPI1_MISO
 Text GLabel 10250 4250 0    50   Input ~ 0
-LED2
+PA5
 Text GLabel 10250 4350 0    50   Input ~ 0
 SAI1_FS_B
 Text GLabel 10250 4450 0    50   Input ~ 0
@@ -870,7 +868,7 @@ Wire Wire Line
 	8500 3100 8500 3450
 Wire Wire Line
 	8500 3450 8750 3450
-Text GLabel 8750 4650 0    50   Input ~ 0
+Text GLabel 8750 4350 0    50   Input ~ 0
 BOOT0
 $Comp
 L Device:R_Small R3
@@ -1010,4 +1008,6 @@ Wire Wire Line
 	8000 3650 8000 3750
 Wire Wire Line
 	8000 3750 8750 3750
+Text GLabel 6700 3900 2    50   Input ~ 0
+PA5
 $EndSCHEMATC

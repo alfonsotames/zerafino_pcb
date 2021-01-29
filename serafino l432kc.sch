@@ -143,9 +143,9 @@ Text GLabel 6700 4600 2    50   Input ~ 0
 USB_D+
 Text GLabel 6700 4500 2    50   Input ~ 0
 USB_D-
-Text GLabel 6700 3600 2    50   Input ~ 0
+Text GLabel 7400 2800 2    50   Input ~ 0
 USART2_TX
-Text GLabel 6700 3700 2    50   Input ~ 0
+Text GLabel 7400 2950 2    50   Input ~ 0
 USART2_RX
 Text Notes 5200 1400 0    50   ~ 0
 VDD Decouples
@@ -412,7 +412,7 @@ F 3 "" H 1550 2800 50  0001 C CNN
 $EndComp
 Text GLabel 6700 4100 2    50   Input ~ 0
 SPI1_MOSI
-Text GLabel 6700 3500 2    50   Input ~ 0
+Text GLabel 7400 2650 2    50   Input ~ 0
 SPI1_SCK
 Text GLabel 6700 4000 2    50   Input ~ 0
 SPI1_MISO
@@ -696,11 +696,11 @@ F 3 "" H 10100 3350 50  0001 C CNN
 	1    10100 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5700 4900 0    50   Input ~ 0
+Text GLabel 6700 3700 2    50   Input ~ 0
 LED2
-Text GLabel 5700 4800 0    50   Input ~ 0
+Text GLabel 6700 3600 2    50   Input ~ 0
 LED1
-Text GLabel 5700 4700 0    50   Input ~ 0
+Text GLabel 6700 3500 2    50   Input ~ 0
 LED0
 Text GLabel 5700 4600 0    50   Input ~ 0
 PB4

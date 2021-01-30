@@ -143,10 +143,10 @@ Text GLabel 6700 4600 2    50   Input ~ 0
 USB_D+
 Text GLabel 6700 4500 2    50   Input ~ 0
 USB_D-
-Text GLabel 7400 2800 2    50   Input ~ 0
-USART2_TX
-Text GLabel 7400 2950 2    50   Input ~ 0
-USART2_RX
+Text GLabel 5700 4800 0    50   Input ~ 0
+USART1_TX
+Text GLabel 5700 4900 0    50   Input ~ 0
+USART1_RX
 Text Notes 5200 1400 0    50   ~ 0
 VDD Decouples
 Text Notes 6000 2150 0    50   ~ 0
@@ -412,7 +412,7 @@ F 3 "" H 1550 2800 50  0001 C CNN
 $EndComp
 Text GLabel 6700 4100 2    50   Input ~ 0
 SPI1_MOSI
-Text GLabel 7400 2650 2    50   Input ~ 0
+Text GLabel 6700 3900 2    50   Input ~ 0
 SPI1_SCK
 Text GLabel 6700 4000 2    50   Input ~ 0
 SPI1_MISO
@@ -761,7 +761,7 @@ F 3 "" H 8000 3650 50  0001 C CNN
 $EndComp
 Text GLabel 8750 3650 0    50   Input ~ 0
 VHIGH
-Text GLabel 8750 4450 0    50   Input ~ 0
+Text GLabel 8750 4750 0    50   Input ~ 0
 NRST
 Text GLabel 10250 3750 0    50   Input ~ 0
 PA8
@@ -773,25 +773,23 @@ Text GLabel 10250 3950 0    50   Input ~ 0
 SPI1_SS
 Text GLabel 8750 4250 0    50   Input ~ 0
 PB4
-Text GLabel 8750 4550 0    50   Input ~ 0
+Text GLabel 10250 4650 0    50   Input ~ 0
 LED0
-Text GLabel 8750 4650 0    50   Input ~ 0
+Text GLabel 10250 4550 0    50   Input ~ 0
 LED1
-Text GLabel 8750 4750 0    50   Input ~ 0
+Text GLabel 10250 4450 0    50   Input ~ 0
 LED2
 Text GLabel 10250 4050 0    50   Input ~ 0
 SPI1_MOSI
 Text GLabel 10250 4150 0    50   Input ~ 0
 SPI1_MISO
-Text GLabel 10250 4250 0    50   Input ~ 0
-PA5
 Text GLabel 10250 4350 0    50   Input ~ 0
 SAI1_FS_B
-Text GLabel 10250 4450 0    50   Input ~ 0
-USART2_RX
-Text GLabel 10250 4550 0    50   Input ~ 0
-USART2_TX
-Text GLabel 10250 4650 0    50   Input ~ 0
+Text GLabel 8750 4550 0    50   Input ~ 0
+USART1_RX
+Text GLabel 8750 4450 0    50   Input ~ 0
+USART1_TX
+Text GLabel 10250 4250 0    50   Input ~ 0
 SPI1_SCK
 Wire Wire Line
 	1450 800  1450 900 
@@ -866,7 +864,7 @@ Wire Wire Line
 	8500 3100 8500 3450
 Wire Wire Line
 	8500 3450 8750 3450
-Text GLabel 8750 4350 0    50   Input ~ 0
+Text GLabel 8750 4650 0    50   Input ~ 0
 BOOT0
 $Comp
 L Device:R_Small R3
@@ -1011,8 +1009,6 @@ Wire Wire Line
 	8000 3650 8000 3750
 Wire Wire Line
 	8000 3750 8750 3750
-Text GLabel 6700 3900 2    50   Input ~ 0
-PA5
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5FF882A4
@@ -1071,4 +1067,8 @@ F 4 "SI3401A-TP" H 1100 1500 50  0001 C CNN "Part No."
 $EndComp
 Text Notes 8250 2150 0    50   ~ 0
 * Use Tantalum/Ceramic\nfor 1uF capacitor
+Text GLabel 5700 4700 0    50   Input ~ 0
+SAI1_SD_B
+Text GLabel 8750 4350 0    50   Input ~ 0
+SAI1_SD_B
 $EndSCHEMATC

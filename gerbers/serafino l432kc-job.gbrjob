@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.9-73d0e3b20d~88~ubuntu20.10.1"
+      "Version":     "(5.1.8-0-10_14)"
     },
-    "CreationDate":  "2021-01-08T13:25:03-06:00"
+    "CreationDate":  "2021-01-29T20:55:06-06:00"
   },
   "GeneralSpecs":
   {
@@ -32,7 +32,7 @@
       "PadToPad":  0.200,
       "PadToTrack":  0.200,
       "TrackToTrack":  0.200,
-      "MinLineWidth":  0.250
+      "MinLineWidth":  0.200
     },
     {
       "Layers": "Inner",

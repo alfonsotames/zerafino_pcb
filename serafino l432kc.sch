@@ -139,9 +139,9 @@ Text GLabel 6700 4700 2    50   Input ~ 0
 SWDIO
 Text GLabel 6700 4800 2    50   Input ~ 0
 SWCLK
-Text GLabel 6700 4600 2    50   Input ~ 0
+Text GLabel 7350 4700 2    50   Input ~ 0
 USB_D+
-Text GLabel 6700 4500 2    50   Input ~ 0
+Text GLabel 7350 4400 2    50   Input ~ 0
 USB_D-
 Text GLabel 5700 4800 0    50   Input ~ 0
 USART1_TX
@@ -759,11 +759,11 @@ F 3 "" H 8000 3650 50  0001 C CNN
 	1    8000 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 3650 0    50   Input ~ 0
+Text GLabel 8750 3550 0    50   Input ~ 0
 VHIGH
 Text GLabel 8750 4750 0    50   Input ~ 0
 NRST
-Text GLabel 10250 3750 0    50   Input ~ 0
+Text GLabel 8750 4650 0    50   Input ~ 0
 PA8
 Text GLabel 8750 4050 0    50   Input ~ 0
 PA15
@@ -771,8 +771,6 @@ Text GLabel 10250 3850 0    50   Input ~ 0
 PB1
 Text GLabel 10250 3950 0    50   Input ~ 0
 SPI1_SS
-Text GLabel 8750 4250 0    50   Input ~ 0
-PB4
 Text GLabel 10250 4650 0    50   Input ~ 0
 LED0
 Text GLabel 10250 4550 0    50   Input ~ 0
@@ -785,10 +783,6 @@ Text GLabel 10250 4150 0    50   Input ~ 0
 SPI1_MISO
 Text GLabel 10250 4350 0    50   Input ~ 0
 SAI1_FS_B
-Text GLabel 8750 4550 0    50   Input ~ 0
-USART1_RX
-Text GLabel 8750 4450 0    50   Input ~ 0
-USART1_TX
 Text GLabel 10250 4250 0    50   Input ~ 0
 SPI1_SCK
 Wire Wire Line
@@ -864,8 +858,6 @@ Wire Wire Line
 	8500 3100 8500 3450
 Wire Wire Line
 	8500 3450 8750 3450
-Text GLabel 8750 4650 0    50   Input ~ 0
-BOOT0
 $Comp
 L Device:R_Small R3
 U 1 1 5FD4E68B
@@ -965,8 +957,6 @@ Wire Wire Line
 	10100 3450 10250 3450
 Text GLabel 8750 4150 0    50   Input ~ 0
 SAI1_SCK_B
-Text GLabel 8750 3550 0    50   Input ~ 0
-EN
 Wire Wire Line
 	2250 4600 2900 4600
 Wire Wire Line
@@ -1048,13 +1038,11 @@ Text Notes 8250 2150 0    50   ~ 0
 * Use Tantalum/Ceramic\nfor 1uF capacitor
 Text GLabel 5700 4700 0    50   Input ~ 0
 SAI1_SD_B
-Text GLabel 8750 4350 0    50   Input ~ 0
-SAI1_SD_B
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0107
 U 1 1 6018DE27
 P 3850 5700
-F 0 "#PWR?" H 3850 5550 50  0001 C CNN
+F 0 "#PWR0107" H 3850 5550 50  0001 C CNN
 F 1 "+3.3V" H 3865 5873 50  0000 C CNN
 F 2 "" H 3850 5700 50  0001 C CNN
 F 3 "" H 3850 5700 50  0001 C CNN
@@ -1074,4 +1062,42 @@ Text GLabel 1200 5850 2    50   Input ~ 0
 SPI1_MISO
 Text Notes 1500 6100 0    50   ~ 0
 * LED for Native \nDFU Mode Indicator
+Text GLabel 8750 4250 0    50   Input ~ 0
+PB4
+Text GLabel 8750 4350 0    50   Input ~ 0
+SAI1_SD_B
+Text GLabel 8750 4450 0    50   Input ~ 0
+USART1_TX
+Text GLabel 8750 4550 0    50   Input ~ 0
+USART1_RX
+Text GLabel 8750 3650 0    50   Input ~ 0
+CAN_TD
+Text GLabel 10250 3750 0    50   Input ~ 0
+CAN_RD
+Wire Wire Line
+	7350 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 4500
+Wire Wire Line
+	7250 4500 6700 4500
+Wire Wire Line
+	7350 4700 7250 4700
+Wire Wire Line
+	7250 4700 7250 4600
+Wire Wire Line
+	7250 4600 6700 4600
+Text GLabel 7350 4850 2    50   Input ~ 0
+CAN_TD
+Text GLabel 7350 4250 2    50   Input ~ 0
+CAN_RD
+Wire Wire Line
+	7350 4250 7250 4250
+Wire Wire Line
+	7250 4250 7250 4400
+Connection ~ 7250 4400
+Wire Wire Line
+	7350 4850 7250 4850
+Wire Wire Line
+	7250 4850 7250 4700
+Connection ~ 7250 4700
 $EndSCHEMATC

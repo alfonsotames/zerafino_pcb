@@ -988,11 +988,6 @@ Wire Wire Line
 	2700 1850 2500 1850
 Wire Wire Line
 	2500 1850 2500 1700
-Text GLabel 2500 1950 3    50   Input ~ 0
-EN
-Wire Wire Line
-	2500 1950 2500 1850
-Connection ~ 2500 1850
 Wire Wire Line
 	8000 3650 8000 3750
 Wire Wire Line

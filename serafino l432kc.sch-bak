@@ -1100,5 +1100,5 @@ Text Notes 1100 6100 0    50   ~ 0
 Text Notes 1050 5150 0    50   ~ 0
 * Max Source = 8ma
 Text Notes 9300 5550 0    50   ~ 0
-ATTENTION:\nEach pin can source up to 20ma*. 
+ATTENTION:\nEach pin can source up to 20ma*. \nAll pins can source up to 100ma in total.\n\n*
 $EndSCHEMATC

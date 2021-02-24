@@ -697,7 +697,7 @@ F 3 "" H 10100 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6700 3700 2    50   Input ~ 0
-PA3
+LED2
 Text GLabel 6700 3600 2    50   Input ~ 0
 LED1
 Text GLabel 6700 3500 2    50   Input ~ 0
@@ -776,7 +776,7 @@ LED0
 Text GLabel 10250 4550 0    50   Input ~ 0
 LED1
 Text GLabel 10250 4450 0    50   Input ~ 0
-PA3
+LED2
 Text GLabel 10250 4050 0    50   Input ~ 0
 SPI1_MOSI
 Text GLabel 10250 4150 0    50   Input ~ 0
@@ -1054,7 +1054,7 @@ Connection ~ 3850 6450
 Wire Wire Line
 	3850 6450 4050 6450
 Text GLabel 750  6800 2    50   Input ~ 0
-SPI1_MISO
+LED2
 Text Notes 1100 7150 0    50   ~ 0
 * LED for Native DFU Mode Indicator\n* Max Source = 10ma
 Text GLabel 8750 4250 0    50   Input ~ 0

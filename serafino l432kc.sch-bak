@@ -263,7 +263,7 @@ F 4 "155060RS75300" H 700 4900 50  0001 C CNN "Part No."
 	0    -1   -1   0   
 $EndComp
 Text GLabel 750  4700 2    50   Input ~ 0
-LED0
+PA1
 $Comp
 L Device:R_Small R1
 U 1 1 5FC9EB73
@@ -699,9 +699,9 @@ $EndComp
 Text GLabel 6700 3700 2    50   Input ~ 0
 PA3
 Text GLabel 6700 3600 2    50   Input ~ 0
-LED1
+PA2
 Text GLabel 6700 3500 2    50   Input ~ 0
-LED0
+PA1
 Text GLabel 5700 4600 0    50   Input ~ 0
 PB4
 Text GLabel 6700 4200 2    50   Input ~ 0
@@ -772,9 +772,9 @@ PB1
 Text GLabel 10250 3950 0    50   Input ~ 0
 SPI1_SS
 Text GLabel 10250 4650 0    50   Input ~ 0
-LED0
+PA1
 Text GLabel 10250 4550 0    50   Input ~ 0
-LED1
+PA2
 Text GLabel 10250 4450 0    50   Input ~ 0
 PA3
 Text GLabel 10250 4050 0    50   Input ~ 0
@@ -937,7 +937,7 @@ Wire Wire Line
 Wire Wire Line
 	700  7350 700  7400
 Text GLabel 750  5750 2    50   Input ~ 0
-LED1
+PA2
 Wire Wire Line
 	750  5750 700  5750
 Wire Wire Line
@@ -1054,9 +1054,9 @@ Connection ~ 3850 6450
 Wire Wire Line
 	3850 6450 4050 6450
 Text GLabel 750  6800 2    50   Input ~ 0
-SPI1_MISO
+PA3
 Text Notes 1100 7150 0    50   ~ 0
-* LED for Native DFU Mode Indicator\n* Max Source = 10ma
+* Max Source = 10ma
 Text GLabel 8750 4250 0    50   Input ~ 0
 PB4
 Text GLabel 8750 4350 0    50   Input ~ 0
@@ -1099,6 +1099,6 @@ Text Notes 1100 6100 0    50   ~ 0
 * Max Source = 17ma
 Text Notes 1050 5150 0    50   ~ 0
 * Max Source = 8ma
-Text Notes 9300 5550 0    50   ~ 0
-ATTENTION:\nEach pin can source up to 20ma*. \nAll pins can source up to 100ma in total.\n\n*
+Text Notes 8900 5650 0    50   ~ 0
+ATTENTION:\nEach pin can source up to 20ma*. \nAll pins can source up to 100ma in total.\n\n* Check pins shared with LEDs for particular\n sourcing.
 $EndSCHEMATC

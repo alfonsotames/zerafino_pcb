@@ -590,12 +590,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5FE261BD
-P 8500 3200
-F 0 "#PWR0102" H 8500 2950 50  0001 C CNN
-F 1 "GND" H 8505 3027 50  0000 C CNN
-F 2 "" H 8500 3200 50  0001 C CNN
-F 3 "" H 8500 3200 50  0001 C CNN
-	1    8500 3200
+P 8700 3200
+F 0 "#PWR0102" H 8700 2950 50  0001 C CNN
+F 1 "GND" H 8705 3027 50  0000 C CNN
+F 2 "" H 8700 3200 50  0001 C CNN
+F 3 "" H 8700 3200 50  0001 C CNN
+	1    8700 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -664,21 +664,21 @@ PA0
 $Comp
 L power:+VIN #PWR0104
 U 1 1 5FD50E68
-P 8200 3650
-F 0 "#PWR0104" H 8200 3500 50  0001 C CNN
-F 1 "+VIN" H 8215 3823 50  0000 C CNN
-F 2 "" H 8200 3650 50  0001 C CNN
-F 3 "" H 8200 3650 50  0001 C CNN
-	1    8200 3650
+P 8150 3650
+F 0 "#PWR0104" H 8150 3500 50  0001 C CNN
+F 1 "+VIN" H 8165 3823 50  0000 C CNN
+F 2 "" H 8150 3650 50  0001 C CNN
+F 3 "" H 8150 3650 50  0001 C CNN
+	1    8150 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8950 3550 0    50   Input ~ 0
+Text GLabel 9150 3550 0    50   Input ~ 0
 VHIGH
-Text GLabel 8950 4750 0    50   Input ~ 0
+Text GLabel 9150 4750 0    50   Input ~ 0
 NRST
-Text GLabel 8950 4650 0    50   Input ~ 0
+Text GLabel 9150 4650 0    50   Input ~ 0
 PA8
-Text GLabel 8950 4050 0    50   Input ~ 0
+Text GLabel 9150 4050 0    50   Input ~ 0
 PA15
 Text GLabel 10450 3850 0    50   Input ~ 0
 PB1
@@ -721,9 +721,9 @@ Wire Wire Line
 	3550 1650 3550 1700
 Wire Wire Line
 	2150 950  2150 1400
-Text GLabel 8950 3850 0    50   Input ~ 0
+Text GLabel 9150 3850 0    50   Input ~ 0
 SWDIO
-Text GLabel 8950 3950 0    50   Input ~ 0
+Text GLabel 9150 3950 0    50   Input ~ 0
 SWCLK
 $Comp
 L Connector_Generic:Conn_01x14 J3
@@ -739,12 +739,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x14 J2
 U 1 1 5FDFB498
-P 9150 4050
-F 0 "J2" H 9100 4900 50  0000 L CNN
-F 1 "Conn_01x14" H 8800 4800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 9150 4050 50  0001 C CNN
-F 3 "~" H 9150 4050 50  0001 C CNN
-	1    9150 4050
+P 9350 4050
+F 0 "J2" H 9300 4900 50  0000 L CNN
+F 1 "Conn_01x14" H 9000 4800 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 9350 4050 50  0001 C CNN
+F 3 "~" H 9350 4050 50  0001 C CNN
+	1    9350 4050
 	1    0    0    -1  
 $EndComp
 Text GLabel 4650 7050 0    50   Input ~ 0
@@ -764,13 +764,13 @@ $EndComp
 Wire Wire Line
 	5250 7050 5500 7050
 Wire Wire Line
-	8500 3200 8500 3100
+	8700 3200 8700 3100
 Wire Wire Line
-	8500 3100 8700 3100
+	8700 3100 8900 3100
 Wire Wire Line
-	8700 3100 8700 3450
+	8900 3100 8900 3450
 Wire Wire Line
-	8700 3450 8950 3450
+	8900 3450 9150 3450
 $Comp
 L Device:R_Small R3
 U 1 1 5FD4E68B
@@ -868,7 +868,7 @@ Wire Wire Line
 	10300 3350 10300 3450
 Wire Wire Line
 	10300 3450 10450 3450
-Text GLabel 8950 4150 0    50   Input ~ 0
+Text GLabel 9150 4150 0    50   Input ~ 0
 SAI1_SCK_B
 Wire Wire Line
 	3100 6350 3750 6350
@@ -902,9 +902,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 1850 2500 1700
 Wire Wire Line
-	8200 3650 8200 3750
-Wire Wire Line
-	8200 3750 8950 3750
+	8150 3650 8150 3750
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5FF882A4
@@ -970,17 +968,17 @@ Text GLabel 1100 6800 2    50   Input ~ 0
 PA3
 Text Notes 1450 7150 0    50   ~ 0
 * Max Source = 10ma
-Text GLabel 8950 4250 0    50   Input ~ 0
+Text GLabel 9150 4250 0    50   Input ~ 0
 PB4
-Text GLabel 8950 4350 0    50   Input ~ 0
+Text GLabel 9150 4350 0    50   Input ~ 0
 SAI1_SD_B
-Text GLabel 8950 4450 0    50   Input ~ 0
+Text GLabel 9150 4450 0    50   Input ~ 0
 USART1_TX
-Text GLabel 8950 4550 0    50   Input ~ 0
+Text GLabel 9150 4550 0    50   Input ~ 0
 USART1_RX
-Text GLabel 8950 3650 0    50   Input ~ 0
+Text GLabel 8650 3650 0    50   Input ~ 0
 CAN_TD
-Text GLabel 10450 3750 0    50   Input ~ 0
+Text GLabel 9850 3750 0    50   Input ~ 0
 CAN_RD
 Wire Wire Line
 	7350 4500 7250 4500
@@ -994,20 +992,6 @@ Wire Wire Line
 	7250 4800 7250 4700
 Wire Wire Line
 	7250 4700 6700 4700
-Text GLabel 7350 4950 2    50   Input ~ 0
-CAN_TD
-Text GLabel 7350 4350 2    50   Input ~ 0
-CAN_RD
-Wire Wire Line
-	7350 4350 7250 4350
-Wire Wire Line
-	7250 4350 7250 4500
-Connection ~ 7250 4500
-Wire Wire Line
-	7350 4950 7250 4950
-Wire Wire Line
-	7250 4950 7250 4800
-Connection ~ 7250 4800
 Text Notes 1450 6100 0    50   ~ 0
 * Max Source = 17ma
 Text Notes 1400 5150 0    50   ~ 0
@@ -1177,4 +1161,28 @@ Wire Notes Line
 	11100 2650 8050 2650
 Text Notes 8150 2800 0    50   ~ 0
 PINOUT
+Wire Wire Line
+	9850 3750 9950 3750
+Text GLabel 9850 3550 0    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	9850 3550 9950 3550
+Wire Wire Line
+	9950 3550 9950 3750
+Connection ~ 9950 3750
+Wire Wire Line
+	9950 3750 10450 3750
+Wire Wire Line
+	8150 3750 9150 3750
+Text GLabel 8650 3500 0    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	8650 3650 8750 3650
+Wire Wire Line
+	8650 3500 8750 3500
+Wire Wire Line
+	8750 3500 8750 3650
+Connection ~ 8750 3650
+Wire Wire Line
+	8750 3650 9150 3650
 $EndSCHEMATC

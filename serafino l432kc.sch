@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Seraph L432KC"
+Title "Seraph L4"
 Date "2021-02-04"
 Rev "1.0"
 Comp "MATERIAM"
@@ -492,18 +492,6 @@ Wire Wire Line
 Connection ~ 3650 5250
 Wire Wire Line
 	3650 5250 3950 5250
-$Comp
-L Regulator_Linear:AP2112K-3.3 U1
-U 1 1 5FD10B31
-P 3000 1500
-F 0 "U1" H 3000 1842 50  0000 C CNN
-F 1 "STLQ020" H 3000 1751 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3000 1825 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3000 1600 50  0001 C CNN
-F 4 "AP2112K-3.3TRG1" H 3000 1500 50  0001 C CNN "Part No."
-	1    3000 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C3
 U 1 1 5FD11F63
@@ -1185,4 +1173,15 @@ Wire Wire Line
 	8750 3650 9150 3650
 Wire Wire Line
 	5500 7050 5500 7150
+$Comp
+L serafino:STLQ020C33R U1
+U 1 1 607E00A7
+P 3000 1500
+F 0 "U1" H 3000 1842 50  0000 C CNN
+F 1 "STLQ020C33R" H 3000 1751 50  0000 C CNN
+F 2 "serafino l432kc:STMicroelectronics-ESDALC6V1W5-0" H 3000 1751 50  0001 C CNN
+F 3 "https://www.mouser.mx/datasheet/2/389/dm00380001-1799047.pdf" H 3000 1600 50  0001 C CNN
+	1    3000 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
